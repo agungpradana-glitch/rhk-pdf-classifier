@@ -1,0 +1,13 @@
+# Cloudflare Pages Configuration
+
+# This is a sample wrangler.toml file to configure Cloudflare Pages.
+
+name = "rhk-pdf-classifier"
+
+[env.production]
+  workers_dev = true
+  compatibility_date = "2026-02-13"
+
+[build]
+  command = "npm run build"
+  directory = "dist"
